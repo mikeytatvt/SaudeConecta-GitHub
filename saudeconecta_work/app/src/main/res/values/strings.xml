@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Saúde Conecta</string>
+    <string name="app_tagline">Gestão e monitoramento de atendimentos na Atenção Básica</string>
+    <string name="cd_logo">Logotipo Saúde Conecta</string>
+    <string name="cd_icone">Ícone</string>
+
+    <!-- TELA 1 – Login -->
+    <string name="login_titulo">Acesse sua conta</string>
+    <string name="login_subtitulo">Entre com seu CPF e senha cadastrados</string>
+    <string name="hint_cpf">CPF</string>
+    <string name="hint_senha">Senha</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="entrando">Entrando…</string>
+    <string name="ou">ou</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="demo_titulo">Acesso de demonstração</string>
+    <string name="demo_descricao">Contas com dados fictícios para testes. Senha: Saude@2026</string>
+    <string name="demo_paciente">Paciente (Maria)</string>
+    <string name="demo_gestor">Gestor</string>
+    <string name="aviso_lgpd_rodape">Seus dados de saúde são protegidos conforme a LGPD (Lei nº 13.709/2018).</string>
+    <string name="rodape_instituicao">UNICID – Análise e Desenvolvimento de Sistemas</string>
+    <string name="msg_conta_criada_login">Conta criada. Informe sua senha para entrar.</string>
+    <string name="erro_login_bloqueado">Muitas tentativas sem sucesso. Aguarde %1$d segundos.</string>
+    <string name="aviso_tentativas_restantes">Restam %1$d tentativa(s) antes do bloqueio temporário.</string>
+    <string name="aviso_bloqueio">Acesso bloqueado por 60 segundos por segurança.</string>
+
+    <!-- TELA 1 – Cadastro -->
+    <string name="titulo_cadastro">Criar conta</string>
+    <string name="cadastro_intro">Preencha seus dados para agendar consultas e acompanhar seus atendimentos.</string>
+    <string name="secao_dados_pessoais">Dados pessoais</string>
+    <string name="secao_contato">Contato e endereço</string>
+    <string name="secao_seguranca">Segurança</string>
+    <string name="hint_nome_completo">Nome completo</string>
+    <string name="hint_data_nascimento">Data de nascimento</string>
+    <string name="placeholder_data">dd/mm/aaaa</string>
+    <string name="hint_telefone">Telefone celular</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_endereco">Endereço (rua, número, bairro e cidade)</string>
+    <string name="hint_confirmar_senha">Confirmar senha</string>
+    <string name="helper_senha">Mínimo de 8 caracteres, com letras e números</string>
+    <string name="termos_checkbox">Li e concordo com os Termos de Uso e com o tratamento dos meus dados de saúde conforme a LGPD.</string>
+    <string name="ver_termos">Ver Termos de Uso e Política de Privacidade</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cadastrando">Cadastrando…</string>
+    <string name="ja_tenho_conta">Já tenho conta. Entrar</string>
+    <string name="titulo_calendario_nascimento">Data de nascimento</string>
+    <string name="cd_abrir_calendario">Abrir calendário</string>
+    <string name="titulo_termos">Termos de Uso e Privacidade</string>
+    <string name="texto_termos_lgpd">O Saúde Conecta trata seus dados pessoais e dados pessoais sensíveis de saúde exclusivamente para a prestação de serviços de saúde pública, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).\n\nDados coletados: nome, CPF, data de nascimento, telefone, e-mail, endereço, histórico de agendamentos, exames e medicamentos prescritos.\n\nFinalidade: agendamento de consultas, acompanhamento de atendimentos, envio de lembretes e geração de indicadores agregados para a gestão da rede de saúde.\n\nSegurança: sua senha é armazenada de forma criptografada (hash com salt) e os dados não são incluídos em backups em nuvem do aparelho.\n\nSeus direitos: você pode solicitar acesso, correção ou exclusão dos seus dados na sua unidade de saúde de referência.\n\nEste é um projeto acadêmico com dados simulados.</string>
+    <string name="li_e_concordo">Li e concordo</string>
+    <string name="fechar">Fechar</string>
+    <string name="cadastro_sucesso_titulo">Cadastro realizado</string>
+    <string name="cadastro_sucesso_msg">Sua conta foi criada. Use seu CPF e senha para entrar no Saúde Conecta.</string>
+    <string name="ir_para_login">Ir para o login</string>
+
+    <!-- TELA 1 – Recuperação de senha -->
+    <string name="titulo_recuperar_senha">Recuperar senha</string>
+    <string name="recuperar_titulo">Confirme sua identidade</string>
+    <string name="recuperar_descricao">Por segurança, informe os dados do seu cadastro para criar uma nova senha.</string>
+    <string name="verificar_dados">Verificar dados</string>
+    <string name="verificando">Verificando…</string>
+    <string name="nova_senha_titulo">Defina sua nova senha</string>
+    <string name="nova_senha_descricao">Identidade confirmada. Crie uma senha que você não use em outros serviços.</string>
+    <string name="hint_nova_senha">Nova senha</string>
+    <string name="redefinir_senha">Redefinir senha</string>
+    <string name="redefinindo">Redefinindo…</string>
+    <string name="senha_redefinida_titulo">Senha redefinida</string>
+    <string name="senha_redefinida_msg">Sua senha foi alterada. Faça login com a nova senha.</string>
+
+    <!-- Validações -->
+    <string name="erro_cpf_obrigatorio">Informe o CPF</string>
+    <string name="erro_cpf_invalido">CPF inválido</string>
+    <string name="erro_senha_obrigatoria">Informe a senha</string>
+    <string name="erro_nome_invalido">Informe nome e sobrenome, somente letras</string>
+    <string name="erro_data_invalida">Data inválida. Use o formato dd/mm/aaaa</string>
+    <string name="erro_data_futura">A data de nascimento não pode ser futura</string>
+    <string name="erro_menor_idade">Menores de 18 anos devem ser cadastrados por um responsável na UBS</string>
+    <string name="erro_idade_maxima">Verifique a data de nascimento informada</string>
+    <string name="erro_telefone_invalido">Telefone inválido. Ex.: (11) 98765-4321</string>
+    <string name="erro_email_invalido">E-mail inválido</string>
+    <string name="erro_endereco_invalido">Informe o endereço completo</string>
+    <string name="erro_senha_fraca">Use ao menos 8 caracteres, com letras e números</string>
+    <string name="erro_senhas_diferentes">As senhas não conferem</string>
+    <string name="erro_termos">Aceite os termos para continuar</string>
+
+    <!-- Telas provisórias (substituídas nas próximas etapas) -->
+    <string name="ola_nome">Olá, %1$s!</string>
+    <string name="boas_vindas">Boas-vindas ao Saúde Conecta.</string>
+    <string name="sair">Sair</string>
+    <string name="sair_confirmacao">Deseja sair da sua conta?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="titulo_dashboard_gestor">Dashboard - Gestor</string>
+    <string name="home_provisoria_info">Login de paciente realizado. A tela inicial completa (Figura 1 do banner) chega na Etapa 2.</string>
+    <string name="gestor_provisorio_info">Acesso de gestor confirmado. O dashboard completo (Figura 3 do banner) chega na etapa do gestor.</string>
+    <string name="perfil_paciente">Perfil: Paciente</string>
+    <string name="perfil_gestor">Perfil: Gestor</string>
+
+    <!-- TELA 2 – Início do paciente -->
+    <string name="cd_menu">Abrir menu</string>
+    <string name="inicio">Início</string>
+    <string name="carregando">Carregando…</string>
+    <string name="proximo_atendimento">Próximo atendimento</string>
+    <string name="consulta_de">Consulta %1$s</string>
+    <string name="data_hora">%1$s - %2$s</string>
+    <string name="ver_detalhes">Ver detalhes</string>
+    <string name="sem_consulta">Você não tem consultas agendadas.</string>
+    <string name="agendar_consulta">Agendar consulta</string>
+    <string name="meus_atendimentos">Meus atendimentos</string>
+    <string name="exames_resultados">Exames e resultados</string>
+    <string name="medicamentos">Medicamentos</string>
+    <string name="unidades_saude">Unidades de saúde</string>
+    <string name="notificacoes">Notificações</string>
+    <string name="notificacoes_nao_lidas">Notificações: %1$d não lidas</string>
+    <string name="privacidade_lgpd">Privacidade e LGPD</string>
+    <string name="modulo_em_breve">%1$s: disponível na Etapa %2$d.</string>
+    <string name="detalhes_consulta_msg">Profissional: %1$s
+Data: %2$s
+Horário: %3$s
+
+Unidade: %4$s
+Endereço: %5$s
+Telefone: %6$s
+
+Chegue com 15 minutos de antecedência e leve documento com foto e o Cartão SUS.</string>
+    <string name="como_chegar">Como chegar</string>
+    <string name="erro_mapa">Nenhum aplicativo de mapas encontrado no aparelho.</string>
+    <string name="erro_carregar">Não foi possível carregar seus dados.</string>
+
+    <!-- TELA 3 – Agendamento -->
+    <string name="titulo_agendamento">Agendamento de Consulta</string>
+    <string name="etapa_servico">Serviço</string>
+    <string name="etapa_profissional">Profissional</string>
+    <string name="etapa_data_hora">Data e hora</string>
+    <string name="etapa_confirmacao">Confirmação</string>
+    <string name="especialidade">Especialidade</string>
+    <string name="unidade_de_saude">Unidade de Saúde</string>
+    <string name="profissional">Profissional</string>
+    <string name="datas_disponiveis">Datas disponíveis</string>
+    <string name="horarios_disponiveis">Horários disponíveis</string>
+    <string name="selecione_especialidade">Selecione a especialidade</string>
+    <string name="selecione_unidade">Selecione a unidade</string>
+    <string name="selecione_profissional">Selecione o profissional</string>
+    <string name="info_escolha_profissional">Escolha o profissional para ver as datas.</string>
+    <string name="info_escolha_data">Escolha uma data para ver os horários.</string>
+    <string name="info_carregando_agenda">Verificando disponibilidade…</string>
+    <string name="info_datas_legenda">Datas esmaecidas estão sem horários livres.</string>
+    <string name="info_horarios_legenda">Horários riscados já estão ocupados.</string>
+    <string name="info_sem_datas">Sem horários livres nos próximos dias. Escolha outro profissional ou unidade.</string>
+    <string name="confirmar_agendamento">Confirmar agendamento</string>
+    <string name="agendando">Agendando…</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="voltar">Voltar</string>
+    <string name="confirmacao_titulo">Confirme seu agendamento</string>
+    <string name="confirmacao_msg">Especialidade: %1$s\nUnidade: %2$s\nProfissional: %3$s\nData: %4$s\nHorário: %5$s</string>
+    <string name="agendamento_sucesso_titulo">Consulta agendada</string>
+    <string name="agendamento_sucesso_msg">Sua consulta de %1$s foi confirmada para %2$s às %3$s na %4$s.\n\nVocê receberá um lembrete antes do atendimento.</string>
+    <string name="voltar_inicio">Voltar ao início</string>
+    <string name="cd_dia">%1$s, %2$s</string>
+    <string name="cd_horario_ocupado">%1$s, ocupado</string>
+
+    <!-- TELA 4 – Meus atendimentos -->
+    <string name="aba_agendadas">Agendadas (%1$d)</string>
+    <string name="aba_realizadas">Realizadas (%1$d)</string>
+    <string name="aba_canceladas">Canceladas (%1$d)</string>
+    <string name="status_agendada">Agendada</string>
+    <string name="status_realizada">Realizada</string>
+    <string name="status_cancelada">Cancelada</string>
+    <string name="vazio_agendadas">Você não tem consultas agendadas.</string>
+    <string name="vazio_realizadas">Nenhum atendimento realizado ainda.</string>
+    <string name="vazio_canceladas">Nenhuma consulta cancelada.</string>
+    <string name="cancelar_consulta">Cancelar consulta</string>
+    <string name="manter_consulta">Manter consulta</string>
+    <string name="cancelar_titulo">Cancelar consulta?</string>
+    <string name="cancelamento_sucesso">Consulta cancelada. O horário foi liberado para outros pacientes.</string>
+    <string name="tempo_espera">Tempo de espera: %1$d min</string>
+    <string name="motivo_cancelamento">Motivo: %1$s</string>
+    <string name="rotulo_profissional">Profissional</string>
+    <string name="rotulo_data">Data</string>
+    <string name="rotulo_horario">Horário</string>
+    <string name="rotulo_tipo">Tipo de atendimento</string>
+    <string name="rotulo_unidade">Unidade de saúde</string>
+    <string name="rotulo_endereco">Endereço</string>
+    <string name="rotulo_telefone">Telefone</string>
+    <string name="rotulo_observacoes">Observações</string>
+    <string name="rotulo_tempo_espera">Tempo de espera</string>
+    <string name="rotulo_motivo">Motivo do cancelamento</string>
+    <string name="rotulo_exames">Exames solicitados</string>
+    <string name="minutos">%1$d minutos</string>
+    <string name="tipo_consulta_medica">Consulta médica</string>
+    <string name="tipo_retorno">Retorno</string>
+    <string name="tipo_procedimento">Procedimento</string>
+    <string name="tipo_odontologico">Atendimento odontológico</string>
+    <string-array name="motivos_cancelamento">
+        <item>Não poderei comparecer</item>
+        <item>Vou remarcar para outra data</item>
+        <item>Não preciso mais do atendimento</item>
+        <item>Outro motivo</item>
+    </string-array>
+
+    <!-- TELA 5 – Exames e resultados -->
+    <string name="filtro_todos">Todos (%1$d)</string>
+    <string name="filtro_resultados">Com resultado (%1$d)</string>
+    <string name="filtro_andamento">Em andamento (%1$d)</string>
+    <string name="vazio_exames">Nenhum exame encontrado neste filtro.</string>
+    <string name="exame_solicitado">Solicitado</string>
+    <string name="exame_agendado">Agendado</string>
+    <string name="exame_em_analise">Em análise</string>
+    <string name="exame_resultado_disponivel">Resultado disponível</string>
+    <string name="solicitado_em_por">Solicitado em %1$s por %2$s</string>
+    <string name="solicitado_em">Solicitado em %1$s</string>
+    <string name="realizado_em">Realizado em %1$s</string>
+    <string name="agendado_para">Agendado para %1$s</string>
+    <string name="aguardando_agendamento">Aguardando agendamento na unidade</string>
+    <string name="preparo">Preparo: %1$s</string>
+    <string name="ver_resultado">Ver resultado</string>
+    <string name="abrir_pdf">Abrir PDF</string>
+    <string name="gerando_pdf">Gerando PDF…</string>
+    <string name="rotulo_valores">Valores encontrados</string>
+    <string name="rotulo_observacao">Observação</string>
+    <string name="rotulo_liberacao">Resultado liberado em</string>
+    <string name="rotulo_realizacao">Realizado em</string>
+    <string name="baixar_pdf">Baixar PDF</string>
+    <string name="compartilhar">Compartilhar</string>
+    <string name="baixar_titulo">Salvar na pasta Downloads?</string>
+    <string name="baixar_aviso_lgpd">O PDF contém dados pessoais de saúde. Ao salvá-lo em Downloads, ele poderá ser acessado por outros aplicativos do aparelho.</string>
+    <string name="salvar">Salvar</string>
+    <string name="pdf_salvo">PDF salvo em Downloads/SaudeConecta.</string>
+    <string name="erro_pdf">Não foi possível abrir o PDF.</string>
+    <string name="erro_salvar_pdf">Não foi possível salvar o PDF.</string>
+    <string name="baixar_indisponivel">Nesta versão do Android, use Compartilhar para salvar o arquivo.</string>
+    <string name="compartilhar_pdf_titulo">Compartilhar resultado</string>
+
+    <!-- TELA 6 – Medicamentos -->
+    <plurals name="total_medicamentos">
+        <item quantity="one">%1$d medicamento em uso</item>
+        <item quantity="other">%1$d medicamentos em uso</item>
+    </plurals>
+    <string name="aviso_medicamentos">Siga sempre a orientação do profissional que prescreveu. Não interrompa o tratamento por conta própria.</string>
+    <string name="retirada_farmacia">Retire gratuitamente na farmácia básica: %1$s</string>
+    <string name="vazio_medicamentos">Você não tem medicamentos prescritos.</string>
+    <string name="quantidade">Quantidade: %1$s</string>
+    <string name="prescrito_em">Prescrito em %1$s</string>
+    <string name="medico_especialidade">%1$s – %2$s</string>
+    <string name="rotulo_dosagem">Dosagem</string>
+    <string name="rotulo_orientacao">Orientação de uso</string>
+    <string name="rotulo_quantidade">Quantidade</string>
+    <string name="rotulo_prescricao">Data da prescrição</string>
+    <string name="rotulo_medico">Médico responsável</string>
+    <string name="rotulo_retirada">Onde retirar</string>
+    <string name="aviso_uso_medicamento">Em caso de reação alérgica, falta de ar ou mal-estar intenso, suspenda o uso e procure atendimento. Emergência: SAMU 192.</string>
+
+    <!-- TELA 7 – Unidades de saúde -->
+    <string name="buscar_unidade">Buscar por nome, bairro ou serviço</string>
+    <string name="filtro_todas">Todas</string>
+    <string name="servico_vacinacao">Vacinação</string>
+    <string name="servico_odontologia">Odontologia</string>
+    <string name="servico_farmacia">Farmácia básica</string>
+    <string name="servico_coleta">Coleta de exames</string>
+    <string name="servico_pediatria">Pediatria</string>
+    <string name="vazio_unidades">Nenhuma unidade encontrada. Tente outro termo ou filtro.</string>
+    <string name="unidade_referencia">Sua unidade de referência</string>
+    <string name="aberta_agora">Aberta agora</string>
+    <string name="fechada_agora">Fechada</string>
+    <string name="ligar">Ligar</string>
+    <string name="rotulo_horario_funcionamento">Horário de funcionamento</string>
+    <string name="rotulo_servicos">Serviços disponíveis</string>
+    <string name="rotulo_profissionais">Especialidades e profissionais</string>
+    <string name="cd_unidade">%1$s, %2$s</string>
+
+    <!-- TELA 8 – Notificações -->
+    <string name="filtro_todas_qtd">Todas (%1$d)</string>
+    <string name="filtro_nao_lidas">Não lidas (%1$d)</string>
+    <string name="dica_excluir_notificacao">Deslize uma notificação para o lado para excluí-la.</string>
+    <string name="vazio_notificacoes">Você não tem notificações.</string>
+    <string name="vazio_nao_lidas">Tudo em dia: nenhuma notificação não lida.</string>
+    <string name="marcar_todas_lidas">Marcar todas como lidas</string>
+    <string name="todas_marcadas">Todas as notificações foram marcadas como lidas.</string>
+    <string name="notificacao_excluida">Notificação excluída.</string>
+    <string name="desfazer">Desfazer</string>
+    <string name="agora">agora</string>
+    <string name="ha_minutos">há %1$d min</string>
+    <string name="ha_horas">há %1$d h</string>
+    <string name="ontem_as">ontem às %1$s</string>
+    <string name="data_as">%1$s às %2$s</string>
+    <string name="cd_nao_lida">não lida</string>
+    <string name="canal_consultas">Consultas e lembretes</string>
+    <string name="canal_consultas_desc">Confirmações, lembretes e alterações de agendamento</string>
+    <string name="canal_exames">Resultados de exames</string>
+    <string name="canal_exames_desc">Aviso quando um resultado é liberado</string>
+    <string name="canal_avisos">Avisos das unidades</string>
+    <string name="canal_avisos_desc">Campanhas e comunicados das UBS</string>
+    <string name="notificacao_publica">Você tem uma nova notificação do Saúde Conecta.</string>
+
+    <!-- DASHBOARD DO GESTOR -->
+    <string name="visao_geral_rede">Visão geral da rede</string>
+    <string name="periodo_de_a">Período: %1$s a %2$s</string>
+    <string name="periodo_7">Últimos 7 dias</string>
+    <string name="periodo_30">Últimos 30 dias</string>
+    <string name="periodo_90">Últimos 90 dias</string>
+    <string name="kpi_atendimentos">Atendimentos realizados</string>
+    <string name="kpi_consultas">Consultas médicas</string>
+    <string name="kpi_exames">Exames realizados</string>
+    <string name="kpi_pacientes">Pacientes atendidos</string>
+    <string name="atendimentos_por_unidade">Atendimentos por unidade</string>
+    <string name="atendimentos_por_especialidade">Atendimentos por especialidade</string>
+    <string name="tempo_medio_espera">Tempo médio de espera</string>
+    <string name="minutos_por_dia">Minutos, média por dia</string>
+    <string name="indicadores_desempenho">Indicadores de desempenho</string>
+    <string name="ind_tempo_medio">Espera média (min)</string>
+    <string name="ind_reducao">Redução da espera</string>
+    <string name="ind_cancelamento">Taxa de cancelamento</string>
+    <string name="ind_ocupacao">Ocupação da agenda</string>
+    <string name="ind_agendadas">Agendadas (10 dias úteis)</string>
+    <string name="ind_pacientes_cadastrados">Pacientes cadastrados</string>
+    <string name="ind_unidades">Unidades integradas</string>
+    <string name="ind_profissionais">Profissionais ativos</string>
+    <string name="sem_dados_periodo">Sem dados no período</string>
+    <string name="atualizado_em">Atualizado em %1$s</string>
+    <string name="ola_gestor">Olá, %1$s. Acompanhe os indicadores da rede.</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_agendamentos">Agendamentos</string>
+    <string name="nav_pacientes">Pacientes</string>
+    <string name="nav_profissionais">Profissionais</string>
+    <string name="nav_relatorios">Relatórios</string>
+
+    <!-- ÁREA ADMINISTRATIVA DO GESTOR -->
+    <string name="vazio_admin">Nenhum registro encontrado.</string>
+    <string name="contador_registros">%1$d registro(s)</string>
+    <string name="titulo_admin_unidades">Cadastro de unidades</string>
+    <string name="titulo_admin_profissionais">Cadastro de profissionais</string>
+    <string name="titulo_admin_pacientes">Pacientes</string>
+    <string name="titulo_admin_agendamentos">Agendamentos</string>
+    <string name="busca_unidades">Buscar unidade</string>
+    <string name="busca_profissionais">Buscar por nome, especialidade ou unidade</string>
+    <string name="busca_pacientes">Buscar por nome ou unidade</string>
+    <string name="busca_agendamentos">Buscar por paciente, profissional ou unidade</string>
+    <string name="nova_unidade">Nova unidade</string>
+    <string name="editar_unidade">Editar unidade</string>
+    <string name="novo_profissional">Novo profissional</string>
+    <string name="editar_profissional">Editar profissional</string>
+    <string name="editar">Editar</string>
+    <string name="ativar">Ativar</string>
+    <string name="desativar">Desativar</string>
+    <string name="ativo">Ativo</string>
+    <string name="ativa">Ativa</string>
+    <string name="inativo">Inativo</string>
+    <string name="inativa">Inativa</string>
+    <string name="registrar_atendimento">Registrar atendimento</string>
+    <string name="alterar_ubs">Alterar UBS</string>
+    <string name="com_conta">Com conta no app</string>
+    <string name="sem_conta">Sem conta no app</string>
+    <string name="filtro_hoje">Hoje</string>
+    <string name="filtro_7_dias">7 dias</string>
+    <string name="filtro_30_dias">30 dias</string>
+    <string name="secao_dados_unidade">Dados da unidade</string>
+    <string name="secao_dados_profissional">Dados do profissional</string>
+    <string name="hint_nome_unidade">Nome da unidade (ex.: UBS Jardim)</string>
+    <string name="hint_endereco_unidade">Endereço (rua e número)</string>
+    <string name="hint_bairro">Bairro</string>
+    <string name="hint_telefone_unidade">Telefone</string>
+    <string name="hint_horario">Horário de funcionamento</string>
+    <string name="helper_horario">Formato: Seg a Sex, 07h às 19h</string>
+    <string name="hint_nome_profissional">Nome (ex.: Dra. Ana Souza)</string>
+    <string name="hint_registro">Registro profissional</string>
+    <string name="helper_registro">Ex.: CRM-SP 123456 ou CRO-SP 12345</string>
+    <string name="hint_tempo_espera">Tempo de espera (minutos)</string>
+    <string name="erro_servicos">Selecione ao menos um serviço</string>
+    <string name="erro_nome_unidade">Informe o nome da unidade</string>
+    <string name="erro_endereco_unidade">Informe o endereço</string>
+    <string name="erro_bairro">Informe o bairro</string>
+    <string name="erro_horario">Use o formato: Seg a Sex, 07h às 19h</string>
+    <string name="erro_registro">Informe o registro (ex.: CRM-SP 123456)</string>
+    <string name="erro_selecione">Selecione uma opção</string>
+    <string name="erro_tempo_espera">Informe de 0 a 300 minutos</string>
+    <string name="salvo_sucesso">Dados salvos.</string>
+    <string name="confirmar_desativar_titulo">Desativar?</string>
+    <string name="confirmar_desativar_unidade">A unidade deixará de aparecer para os pacientes e no agendamento.</string>
+    <string name="confirmar_desativar_profissional">O profissional deixará de aparecer no agendamento.</string>
+    <string name="registrar_titulo">Registrar atendimento</string>
+    <string name="registrar_msg">Paciente: %1$s\nConsulta: %2$s</string>
+    <string name="registrar_antecipado">Esta consulta estava marcada para %1$s. Ela será registrada como atendimento de hoje (encaixe).</string>
+    <string name="registrado_sucesso">Atendimento registrado. Os indicadores foram atualizados.</string>
+    <string name="cancelado_pela_unidade">Consulta cancelada. O paciente foi notificado.</string>
+    <string name="alterar_ubs_titulo">Unidade de referência</string>
+    <string name="ubs_alterada">Unidade de referência alterada.</string>
+    <string name="relatorio_indicadores">Relatório de indicadores</string>
+    <string name="relatorio_descricao">Resumo de atendimentos, exames, tempo de espera e agenda da rede, pronto para imprimir ou compartilhar.</string>
+    <string name="gerar_relatorio_pdf">Gerar relatório em PDF</string>
+    <string name="relatorio_lgpd">O relatório contém apenas dados agregados, sem identificação de pacientes (LGPD).</string>
+    <string name="titulo_relatorio_pdf">Relatório de indicadores</string>
+    <string-array name="servicos_disponiveis">
+        <item>Clínica Geral</item>
+        <item>Pediatria</item>
+        <item>Cardiologia</item>
+        <item>Dermatologia</item>
+        <item>Ginecologia</item>
+        <item>Ortopedia</item>
+        <item>Odontologia</item>
+        <item>Vacinação</item>
+        <item>Coleta de exames</item>
+        <item>Farmácia básica</item>
+        <item>Curativos</item>
+        <item>Saúde da Mulher</item>
+    </string-array>
+    <string-array name="motivos_cancelamento_unidade">
+        <item>Ausência do profissional</item>
+        <item>Unidade fechada (ponto facultativo)</item>
+        <item>Solicitação do paciente por telefone</item>
+        <item>Outro motivo</item>
+    </string-array>
+    <string name="aba_agendadas_simples">Agendadas</string>
+    <string name="aba_realizadas_simples">Realizadas</string>
+    <string name="aba_canceladas_simples">Canceladas</string>
+</resources>

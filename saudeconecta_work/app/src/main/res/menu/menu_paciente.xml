@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_agendar"
+            android:icon="@drawable/ic_agendar"
+            android:title="@string/agendar_consulta" />
+        <item
+            android:id="@+id/nav_atendimentos"
+            android:icon="@drawable/ic_atendimentos"
+            android:title="@string/meus_atendimentos" />
+        <item
+            android:id="@+id/nav_exames"
+            android:icon="@drawable/ic_exames"
+            android:title="@string/exames_resultados" />
+        <item
+            android:id="@+id/nav_medicamentos"
+            android:icon="@drawable/ic_medicamentos"
+            android:title="@string/medicamentos" />
+        <item
+            android:id="@+id/nav_unidades"
+            android:icon="@drawable/ic_unidades"
+            android:title="@string/unidades_saude" />
+        <item
+            android:id="@+id/nav_notificacoes"
+            android:icon="@drawable/ic_notifications"
+            android:title="@string/notificacoes" />
+    </group>
+    <group android:id="@+id/grupo_conta">
+        <item
+            android:id="@+id/nav_privacidade"
+            android:icon="@drawable/ic_shield"
+            android:title="@string/privacidade_lgpd" />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/sair" />
+    </group>
+</menu>

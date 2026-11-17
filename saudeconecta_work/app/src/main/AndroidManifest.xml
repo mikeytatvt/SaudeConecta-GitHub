@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Android 13+: mostrar notificações (confirmações, lembretes, resultados) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- allowBackup=false: dados de saúde não vão para backup em nuvem (LGPD) -->
+    <application
+        android:name=".SaudeConectaApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SaudeConecta"
+        tools:targetApi="34">
+
+        <!-- TELA 1 – Login (tela inicial do app) -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- TELA 1 – Cadastro -->
+        <activity
+            android:name=".activities.CadastroActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- TELA 1 – Esqueci minha senha -->
+        <activity
+            android:name=".activities.EsqueciSenhaActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- TELA 2 – Início do paciente -->
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
+
+        <!-- TELA 3 – Agendamento de consulta -->
+        <activity
+            android:name=".activities.AgendamentoActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.HomeActivity" />
+
+        <!-- TELA 4 – Meus atendimentos -->
+        <activity
+            android:name=".activities.MeusAtendimentosActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.HomeActivity" />
+
+        <!-- TELA 5 – Exames e resultados -->
+        <activity
+            android:name=".activities.ExamesActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.HomeActivity" />
+        <activity
+            android:name=".activities.VisualizarPdfActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.ExamesActivity" />
+
+        <!-- TELA 6 – Medicamentos -->
+        <activity
+            android:name=".activities.MedicamentosActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.HomeActivity" />
+
+        <!-- TELA 7 – Unidades de saúde -->
+        <activity
+            android:name=".activities.UnidadesActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.HomeActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- TELA 8 – Notificações -->
+        <activity
+            android:name=".activities.NotificacoesActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.HomeActivity" />
+
+        <!-- Lembrete de consulta disparado pelo alarme (funciona com o app fechado) -->
+        <receiver
+            android:name=".utils.LembreteReceiver"
+            android:exported="false" />
+
+        <!-- Compartilhamento seguro dos PDFs (somente a pasta interna de exames) -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- DASHBOARD DO GESTOR (somente perfil GESTOR) -->
+        <activity
+            android:name=".activities.GestorDashboardActivity"
+            android:exported="false" />
+
+        <!-- ÁREA ADMINISTRATIVA DO GESTOR -->
+        <activity
+            android:name=".activities.AdminUnidadesActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.GestorDashboardActivity" />
+        <activity
+            android:name=".activities.FormUnidadeActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.AdminUnidadesActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.AdminProfissionaisActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.GestorDashboardActivity" />
+        <activity
+            android:name=".activities.FormProfissionalActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.AdminProfissionaisActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.AdminPacientesActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.GestorDashboardActivity" />
+        <activity
+            android:name=".activities.AdminAgendamentosActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.GestorDashboardActivity" />
+        <activity
+            android:name=".activities.RelatoriosActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.GestorDashboardActivity" />
+    </application>
+</manifest>

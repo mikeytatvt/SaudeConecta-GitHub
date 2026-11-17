@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:checked="true"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/nav_dashboard" />
+        <item
+            android:id="@+id/nav_agendamentos"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/nav_agendamentos" />
+        <item
+            android:id="@+id/nav_pacientes"
+            android:icon="@drawable/ic_grupo"
+            android:title="@string/nav_pacientes" />
+        <item
+            android:id="@+id/nav_unidades"
+            android:icon="@drawable/ic_unidades"
+            android:title="@string/unidades_saude" />
+        <item
+            android:id="@+id/nav_profissionais"
+            android:icon="@drawable/ic_atendimentos"
+            android:title="@string/nav_profissionais" />
+        <item
+            android:id="@+id/nav_relatorios"
+            android:icon="@drawable/ic_relatorio"
+            android:title="@string/nav_relatorios" />
+        <item
+            android:id="@+id/nav_notificacoes_gestor"
+            android:icon="@drawable/ic_notifications"
+            android:title="@string/notificacoes" />
+    </group>
+    <group android:id="@+id/grupo_conta_gestor">
+        <item
+            android:id="@+id/nav_privacidade_gestor"
+            android:icon="@drawable/ic_shield"
+            android:title="@string/privacidade_lgpd" />
+        <item
+            android:id="@+id/nav_sair_gestor"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/sair" />
+    </group>
+</menu>

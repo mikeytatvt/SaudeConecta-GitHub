@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cores e estilos usados a partir da Etapa 4 -->
+<resources>
+    <color name="status_agendada_fundo">#D9EBDD</color>
+    <color name="status_agendada_texto">#176638</color>
+    <color name="status_realizada_fundo">#E2EDF8</color>
+    <color name="status_realizada_texto">#1E5E9E</color>
+    <color name="status_cancelada_fundo">#FBE3E3</color>
+    <color name="status_cancelada_texto">#B3261E</color>
+    <color name="status_pendente_fundo">#FFF1D6</color>
+    <color name="status_pendente_texto">#8A5A00</color>
+
+    <style name="SaudeConecta.TabText" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="SaudeConecta.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+</resources>

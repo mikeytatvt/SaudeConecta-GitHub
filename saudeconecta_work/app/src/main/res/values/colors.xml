@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta oficial do banner Saúde Conecta -->
+    <color name="verde_escuro">#176638</color>
+    <color name="verde_medio">#25834B</color>
+    <color name="verde_claro">#D9EBDD</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza_claro">#F5F5F5</color>
+
+    <!-- Apoio -->
+    <color name="verde_profundo">#0F4D29</color>
+    <color name="texto_primario">#1F2A24</color>
+    <color name="texto_secundario">#5E6B63</color>
+    <color name="borda">#E1E6E2</color>
+    <color name="erro">#C62828</color>
+    <color name="alerta">#E09A00</color>
+    <color name="info">#1E6FB8</color>
+    <color name="branco_translucido">#E6FFFFFF</color>
+</resources>

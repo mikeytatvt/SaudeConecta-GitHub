@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Android build outputs
+*.apk
+*.aab
+*.ap_
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local secrets / environment
+.env
+.env.*
+!*.env.example
